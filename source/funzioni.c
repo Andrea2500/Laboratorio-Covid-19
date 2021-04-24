@@ -250,7 +250,7 @@ void fissaAppuntamenti(){
     fp = fopen("files/richiestePrenotazioni.txt", "w");
     if (fp){
         while (lista){
-            fprintf(fp,"%s %d\n",lista->cf,lista->numero_s);
+            fprintf(fp,"%s %d\n",lista->cf,lista->numero_s + 1);
             tmp = lista;
             lista = lista->next;
             free(tmp);
