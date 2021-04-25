@@ -84,6 +84,7 @@ void menuLab(int accesso){
     char choice[100];
     char userid[60],pwd[60];
     if (accesso == 0){
+        printf("Accesso laboratorio\n");
         printf("UserID: ");
         scanf("%s",userid);
         printf("Password: ");
